@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+header {
+  color: black;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: #666 1px solid;
+}
+
+.header__logo {
+  display: flex;
+  margin-left: 40px;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.header__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.header__login {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header__login a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__logo img:hover,
+h1:hover {
+  cursor: pointer;
+}
+
+.hero {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  background-color: cadetblue;
+  position: relative;
+}
+
+.hero__desc {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.hero__image {
+  width: 100%;
+  background-image: url("./images/hero_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#loginForm,
+#registerForm {
+  display: flex;
+  min-height: 80vh;
+  max-width: 300px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#registerForm input[type="text"],
+#registerForm input[type="password"],
+#registerForm input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-bottom: #007bff;
+  border: 1px solid black;
+}
+
+#loginForm button,
+#registerForm button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#loginForm p span {
+  color: #007bff;
+}
+
+#loginForm p span a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+#loginForm p span a:hover {
+  cursor: pointer;
+  color: #1a4d2e;
+}
